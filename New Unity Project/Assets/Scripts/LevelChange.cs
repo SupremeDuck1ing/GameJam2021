@@ -25,7 +25,7 @@ public class LevelChange : MonoBehaviour
         if(other.name == "Player")
         {  
             Debug.Log("Load Scene"); 
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
         }
     }

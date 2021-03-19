@@ -21,7 +21,7 @@ public class AnswerSprites : MonoBehaviour
         Debug.Log(total); */ 
 
 
-        correctSprite.sprite = spriteArray[int2];
+        correctSprite.sprite = spriteArray[int1];
 
 
 

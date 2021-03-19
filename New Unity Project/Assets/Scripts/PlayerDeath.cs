@@ -26,7 +26,7 @@ public class PlayerDeath : MonoBehaviour
         if (other.gameObject.name == "Player")
         { 
             Debug.Log("Dead");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadScene(5);
         }
     }
 }
