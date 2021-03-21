@@ -21,11 +21,11 @@ EditorBuildSettings:
     path: Assets/Scenes/WinScene.unity
     guid: 6371bcea981638444ae6b3dde55bc605
   - enabled: 1
-    path: Assets/Scenes/LevelSelect.unity
-    guid: 8f537c569cab1de4b91b12fb0a67c862
-  - enabled: 1
     path: Assets/Scenes/HazardDeath.unity
     guid: 023b3607539fe62439723fb0425d4dd0
+  - enabled: 1
+    path: Assets/Scenes/LevelSelect.unity
+    guid: 8f537c569cab1de4b91b12fb0a67c862
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
