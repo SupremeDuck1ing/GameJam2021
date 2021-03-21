@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
 
 
     public CharacterController2D controller; 
+    public Animator animator;
 
     public float runSpeed = 40f;
 
@@ -17,11 +18,14 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        leftRight = Input.GetAxisRaw("Horizontal") * runSpeed; 
+        leftRight = Input.GetAxisRaw("Horizontal") * runSpeed;  
+
+        animator.SetFloat("Speed", Mathf.Abs(leftRight));
 
         if(Input.GetButtonDown("Jump"))
         { 
-            jump = true;
+            jump = true; 
+            animator.SetBool("Jumping", true);
 
         } 
 
@@ -34,7 +38,12 @@ public class PlayerMovement : MonoBehaviour
         { 
             crouch = false;
         }
-    } 
+    }  
+
+    public void onLanding()
+    { 
+        animator.SetBool("Jumping", false);
+    }
 
     void FixedUpdate()
     { 
